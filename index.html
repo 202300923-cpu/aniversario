@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3 Años Juntos 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #73e6ee, #9795f0);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .image-box {
+      cursor: pointer;
+      margin-top: 40px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .imagen {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .imagen:hover {
+      transform: scale(1.02);
+    }
+
+    .click-text {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card h1 {
+      font-size: 2rem;
+      color: #31acf9;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      text-align: justify;
+      margin-bottom: 1.5em;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .firma {
+      font-weight: bold;
+      color: #5f27cd;
+    }
+
+    .youtube-link {
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      background-color: #ff4d6d;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .youtube-link:hover {
+      background-color: #e84166;
+    }
+
+    .gif {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Imagen principal -->
+    <div class="image-box" onclick="mostrarMensaje()">
+      <img src="ani2.jpg" alt="Nuestro recuerdo" class="imagen"/>
+      <p class="click-text">Haz clic en la imagen para leer mi mensaje 💌</p>
+    </div>
+
+    <!-- Tarjeta con mensaje -->
+    <div class="card hidden" id="card">
+      <h1>🎉 ¡Feliz 3er Aniversario, amor! 🎉</h1>
+      <p>
+        Hoy celebramos 3 años llenos de amor, aventuras y memorias inolvidables. A tu lado he descubierto la verdadera felicidad, el valor de la paciencia y la belleza del compromiso.
+      </p>
+      <p>
+        Gracias por amarme con mis virtudes y defectos, por hacerme reír en mis días grises, y por ser esa persona que siempre tiene los brazos abiertos para mí. Tu amor es mi lugar seguro.
+      </p>
+      <p>
+        En estos tres años hemos reído, llorado, aprendido y crecido. Hemos construido algo hermoso, y no puedo esperar a ver todo lo que aún nos queda por vivir.
+      </p>
+      <p>
+        Hoy te celebro a ti, a nosotros y al amor que cada día cultivamos con respeto, ternura y dedicación. Que vengan muchos años más de esta historia tan bonita que juntos escribimos.
+      </p>
+      <p class="firma">
+        Con todo mi amor,<br>Tu novia que te ama profundamente 💖
+      </p>
+
+      <!-- Botón a la canción de YouTube -->
+      <a href="https://youtu.be/ISjGBBTSk-Y?si=i3hCz98sqVCVjx-M" target="_blank" class="youtube-link">
+        🎶 Escucha esta canción en YouTube
+      </a>
+
+  <script>
+    function mostrarMensaje() {
+      document.querySelector('.image-box').classList.add("hidden");
+      document.getElementById("card").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
